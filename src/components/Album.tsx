@@ -24,7 +24,7 @@ const Album = () => {
       <h1 className="text-center mt-11 mb-5 text-2xl">Фотографії альбому</h1>
       <div className="flex flex-wrap ml-14">
         {photos.map((photo) => (
-          <div key={photo.id} style={{ margin: "10px" }}>
+          <div key={photo.id} className="m-2">
             <img src={photo.thumbnailUrl} alt={photo.title} />
             <p className="w-40">{photo.title}</p>
           </div>
